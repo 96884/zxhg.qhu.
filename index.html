@@ -2,111 +2,173 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>日常请假信息</title>
-  <style>
-    body {
-      margin: 0;
-      background: #f5f5f5;
-      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-      color: #333;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>日常请假信息</title>
 
-    .header {
-      background: white;
-      text-align: center;
-      padding: 18px 0 10px;
-      font-size: 20px;
-      font-weight: bold;
-      border-bottom: 1px solid #eee;
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:-apple-system,BlinkMacSystemFont,
+    "PingFang SC","Helvetica Neue",Arial,sans-serif;
+}
 
-    .sub {
-      font-size: 14px;
-      color: #777;
-      margin-top: 4px;
-    }
+body{
+    background:#f5f5f7;
+    color:#222;
+}
 
-    .card {
-      background: white;
-      margin-top: 10px;
-      padding: 0 18px;
-    }
+.top{
+    background:#fff;
+    padding-top:18px;
+    position:relative;
+    text-align:center;
+    border-bottom:1px solid #efefef;
+}
 
-    .title {
-      padding: 16px 0;
-      font-size: 18px;
-      font-weight: bold;
-      border-bottom: 1px solid #eee;
-    }
+.close{
+    position:absolute;
+    left:18px;
+    top:22px;
+    font-size:34px;
+    color:#333;
+    font-weight:300;
+}
 
-    .row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 0;
-      border-bottom: 1px solid #f0f0f0;
-      font-size: 16px;
-    }
+.more{
+    position:absolute;
+    right:18px;
+    top:18px;
+    font-size:32px;
+    color:#333;
+}
 
-    .label {
-      color: #888;
-      width: 90px;
-    }
+.title{
+    font-size:22px;
+    font-weight:700;
+    color:#111;
+    letter-spacing:1px;
+}
 
-    .value {
-      flex: 1;
-      text-align: left;
-      color: #222;
-      font-weight: 500;
-    }
-  </style>
+.domain{
+    margin-top:6px;
+    margin-bottom:16px;
+    color:#888;
+    font-size:14px;
+}
+
+.section{
+    background:#f7f7fb;
+    padding:14px 16px;
+    display:flex;
+    align-items:center;
+    font-size:18px;
+    font-weight:700;
+    color:#222;
+}
+
+.blue{
+    width:5px;
+    height:26px;
+    border-radius:5px;
+    background:#4b6fff;
+    margin-right:10px;
+}
+
+.card{
+    background:#fff;
+}
+
+.row{
+    display:flex;
+    padding:22px 18px;
+    border-bottom:1px solid #f0f0f0;
+    font-size:18px;
+}
+
+.label{
+    width:110px;
+    color:#777;
+    font-weight:600;
+}
+
+.value{
+    flex:1;
+    color:#111;
+    font-weight:500;
+    line-height:1.5;
+}
+
+.bottom{
+    height:320px;
+    background:#f5f5f7;
+}
+</style>
 </head>
+
 <body>
-  <div class="header">
-    日常请假信息
-    <div class="sub">zhxg.qhu.edu.cn</div>
-  </div>
 
-  <div class="card">
-    <div class="title">学生请假信息</div>
+<div class="top">
+    <div class="close">×</div>
+    <div class="more">···</div>
+
+    <div class="title">日常请假信息</div>
+    <div class="domain">zhxg.qhu.edu.cn</div>
+</div>
+
+<div class="section">
+    <div class="blue"></div>
+    学生请假信息
+</div>
+
+<div class="card">
 
     <div class="row">
-      <div class="label">学号</div>
-      <div class="value">240201010104</div>
+        <div class="label">学号</div>
+        <div class="value">240201010235</div>
     </div>
 
     <div class="row">
-      <div class="label">姓名</div>
-      <div class="value">王明亮</div>
+        <div class="label">姓名</div>
+        <div class="value">牛子萌</div>
     </div>
 
     <div class="row">
-      <div class="label">学院</div>
-      <div class="value">财经学院</div>
+        <div class="label">学院</div>
+        <div class="value">财经学院</div>
     </div>
 
     <div class="row">
-      <div class="label">专业</div>
-      <div class="value">经济学【本科】</div>
+        <div class="label">专业</div>
+        <div class="value">经济学【本科】</div>
     </div>
 
     <div class="row">
-      <div class="label">班级</div>
-      <div class="value">2024级经济学1班【2402010101】</div>
+        <div class="label">班级</div>
+        <div class="value">2024级经济学2班【2402010102】</div>
     </div>
 
     <div class="row">
-      <div class="label">请假时间</div>
-      <div class="value">2026/05/27 08:00 至 2026/05/27 12:00</div>
+        <div class="label">请假时间</div>
+        <div class="value">2026/05/27 14:00至2026/05/27 18:00</div>
     </div>
 
     <div class="row">
-      <div class="label">请假原因</div>
-      <div class="value">病假</div>
+        <div class="label">请假原因</div>
+        <div class="value">病假</div>
     </div>
-  </div>
+
+    <div class="row">
+        <div class="label">外出地点</div>
+        <div class="value"></div>
+    </div>
+
+</div>
+
+<div class="bottom"></div>
+
 </body>
 </html>
 
